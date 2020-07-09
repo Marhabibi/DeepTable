@@ -10,5 +10,11 @@ This repository contains a table corpus with their orientations annotations for 
 ## Citation
 Please cite the following work
 ```
-kkk
+@article{habibi2020deeptable,
+  title={A Permutation Invariant Neural Network for Table Orientation Classification},
+  author={Habibi, Maryam and Starlinger, Johannes and Leser, Ulf},
+  booktitle={Data Mining and Knowledge Discovery},
+  year={2020}
+}
+```
 
