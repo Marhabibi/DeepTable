@@ -24,7 +24,7 @@ DeepTableEval.py [-h] -m MODEL -i INPUT_TABLES -o OUTPUT_TAGS
 Please cite the following work
 ```
 @article{habibi2020deeptable,
-  title={A Permutation Invariant Neural Network for Table Orientation Classification},
+  title={DeepTable: A Permutation Invariant Neural Network for Table Orientation Classification},
   author={Habibi, Maryam and Starlinger, Johannes and Leser, Ulf},
   booktitle={Data Mining and Knowledge Discovery},
   year={2020}
