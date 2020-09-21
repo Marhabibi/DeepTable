@@ -20,7 +20,7 @@ def transform_tables(inp, config):
 	with open(inp,'rb') as f: 
 		[X,y] = pickle.load(f)
 	
-	texts = ["XXX"] + [' '.join(text_to_word_sequence(' '.join(sum(x,[])),lower=False)) for x in X]
+	texts = ["XXX"] + [' '.join(text_to_word_sequence(' '.join(sum(x,[])),lower=True)) for x in X]
 	
 	
 	tokenizer = Tokenizer()
@@ -53,7 +53,7 @@ def transform_tables(inp, config):
 						
 						z=0
 						
-						for _,word in enumerate(text_to_word_sequence(cell,lower=False)):
+						for _,word in enumerate(text_to_word_sequence(cell,lower=True)):
 							
 							if z<MAX_CELL_LENGTH:
 								
