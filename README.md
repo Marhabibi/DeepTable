@@ -2,7 +2,7 @@
 
 ### A Permutation Invariant Neural Network for Table Orientation Classification
 
-This repository contains a table corpus with their orientations annotations for tables from PMC, and additionally contains the code and the models for classifying tables into one the orientation layouts of horizontal, vertical, and matrix.
+This repository contains a table corpus with their orientations annotations for tables from PMC, and additionally contains the code and the models for classifying tables into one of the orientation layouts of horizontal, vertical, and matrix.
 <br>
 ## Train a model
 To train a model, you need to use the DeepTableTrain.py and provide the number of epochs, the learning rate value and the location of the trained embeddings(download from <a href = "http://bio.nlplab.org/"> here</a>), the table data (in tables.picklef file) and the directory of the trained model:
