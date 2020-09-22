@@ -23,7 +23,6 @@ set_random_seed(2)
 from input_transformation import *
 
 
-
 def read_embeddings(dictionary, emb_file):
 	
 	modelemb = gensim.models.KeyedVectors.load_word2vec_format(emb_file, binary=True)
@@ -33,6 +32,7 @@ def read_embeddings(dictionary, emb_file):
 	for j, i in dictionary.items():
 		if w2v.get(j) is not None:
 			embedding_matrix[i] = w2v[j]
+			
 	return embedding_matrix
 	
 def cell_encoder(input_shape,dic_length,embedding_matrix,embedding_flag):
@@ -86,7 +86,6 @@ def deep_table_model(input_shape,dictionary,embedding_matrix,embedding_flag):
 	# softmax classifier
 	final_dense = Dense(3, activation='softmax', kernel_regularizer=regularizers.l2(0.01),activity_regularizer=regularizers.l1(0.01))(flats)
 		
-	
 	return Model(c_in,final_dense)
 
 if __name__ == "__main__":
